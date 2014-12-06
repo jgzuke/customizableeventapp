@@ -1,0 +1,17 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777;
+  background-color: #ffffff;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+}
+.myforms {
+	color: #777;
+}
+.mytext {
+	font-size: 400%;
+}
+#mymargin {
+	height: 170px;
+}
