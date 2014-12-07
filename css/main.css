@@ -15,3 +15,14 @@ body {
 #mymargin {
 	height: 170px;
 }
+#mainSection {
+	margin-top: 80px;
+}
+#sectionBody {
+
+}
+#myNav {
+	box-shadow: 0px 0px 20px 0px #000;
+    -moz-box-shadow: 0px 0px 20px 0px #000;
+	-webkit-box-shadow: 0px 0px 20px 0px #000;
+}
