@@ -47,7 +47,9 @@
             </div>
             <div class='eventTimeDiv' class='container'>
               <h5 style='float: left;'>$information[2]</h5>
-              <button type=button' class='btn btn-primary' style='float: right;'>Add to Calendar</button>
+              <form method='get' action='resources/".preg_replace('/\s+/', '', $information[0]).".ics'>
+                <button class='btn btn-primary' style='float: right;' type='submit'>Add to Calendar</button>
+              </form>
             </div>
             <HR class='mydividers'></HR>";
           }
