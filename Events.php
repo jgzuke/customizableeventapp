@@ -17,14 +17,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="">Event Name</a>
+          <a class="navbar-brand" href="Overview">Overview</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="Overview.html">Overview</a></li>
-            <li><a href="Speakers.html">Speakers</a></li>
-            <li><a href="Events.html">Events</a></li>
-            <li class = "active"><a>Directions</a></li>
+            <li><a href="Speakers">Speakers</a></li>
+            <li class = "active"><a>Events</a></li>
+            <li><a href="Directions">Directions</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="../navbar/">Other</a></li>
@@ -33,7 +32,7 @@
       </div>
     </nav>
     <div class="container" id = "mainSection"></div>
-      <h1 id = "sectionTitle">Directions</h1>
+      <h1 id = "sectionTitle">Events</h1>
       <div id = "sectionBody">
         
 
