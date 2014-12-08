@@ -34,9 +34,8 @@
     </nav>
     <div class="container" id = "mainSection"></div>
       <h1 id = "sectionTitle">Directions</h1>
-      <div id = "sectionBody">
         <div id="googleMap"></div>
-      </div>
+
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
