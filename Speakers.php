@@ -32,20 +32,21 @@
       </div>
     </nav>
     <div class="container" id = "mainSection"></div>
-      <h1 id = "sectionTitle">Speakers</h1>
       <div id = "sectionBody">
         <?php
-        $speakersFile = file_get_contents('speakers.txt');
-        $speakers  = preg_split("#\n\s*\ns*\n#Uis", $speakersFile);
-        $arr = array("one", "two", "three");
-        foreach ($speakers as $value)
-        {
-          $information  = preg_split("#\n\s*\n#Uis", $value);
-          echo "$value<br />\n";
-          echo "\n";
-        }
+          $speakersFile = file_get_contents('speakers.txt');
+          $speakers  = preg_split("#\n\s*\ns*\n#Uis", $speakersFile);
+          foreach ($speakers as $value)
+          {
+            $information  = preg_split("#\n\s*\n#Uis", $value);
+            echo "
+            <h1 class = 'speakerNames'>$information[0]</h1>
+            <div class='speakerDiv' class='container'>
+              <img src='images/".$information[0].".png' style='float: left;' class='speakerImage'/>
+              <p class = 'speakerDescription'>$information[1]</p>
+            </div>";
+          }
         ?>
-
       </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
