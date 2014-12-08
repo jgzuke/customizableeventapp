@@ -33,12 +33,17 @@
       </div>
     </nav>
     <div class="container" id = "mainSection"></div>
-      <h1 id = "sectionTitle">Overview</h1>
       <div id = "sectionBody">
-        
-
+        <?php
+          $eventFile = file_get_contents('resources/overview.txt');
+          $blurb  = preg_split("#\n\s*\n#Uis", $eventFile);
+            echo "
+            <h1 class = 'eventName'>$blurb[0]</h1>
+            <HR class='mydividers'></HR>
+            <div class = 'eventDescription'><p>$blurb[1]</p></div>";
+          ?>
       </div>
-    </div>
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

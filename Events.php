@@ -41,15 +41,19 @@
           {
             $information  = preg_split("#\n\s*\n#Uis", $value);
             echo "
-            <h1 class = 'speakerNames'>$information[0]</h1>
-            <div class='speakerDiv' class='container'>
-              <p class = 'speakerDescription'>$information[1]</p>
+            <h1 class = 'eventNames'>$information[0]</h1>
+            <div class='eventDiv' class='container'>
+              <p class = 'eventDescription'>$information[1]</p>
+            </div>
+            <div class='eventTimeDiv' class='container'>
+              <h5 style='float: left;'>$information[2]</h5>
+              <button type=button' class='btn btn-primary' style='float: right;'>Add to Calendar</button>
             </div>
             <HR class='mydividers'></HR>";
           }
         ?>
       </div>
-    </div>
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

@@ -9,3 +9,9 @@
 .eventDescription {
 	text-align: left;
 }
+.eventTimeDiv {
+	text-align: left;
+	width: 60%;
+  	margin-left: 20%;
+  	margin-bottom: 60px;
+}

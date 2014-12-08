@@ -1,0 +1,9 @@
+.eventName {
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+.eventDescription {
+	text-align: left;
+	width: 80%;
+  	margin-left: 10%;
+}
