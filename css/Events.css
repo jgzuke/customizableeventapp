@@ -1,14 +1,11 @@
-.speakerImage {
-	margin-right: 30px;
-}
-.speakerDiv {
+.eventDiv {
 	width: 80%;
   	margin-left: 10%;
 }
-.speakerNames {
+.eventNames {
 	margin-top: 50px;
 	margin-bottom: 20px;
 }
-.speakerDescription {
+.eventDescription {
 	text-align: left;
 }

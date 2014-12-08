@@ -35,7 +35,7 @@
     <div class="container" id = "mainSection"></div>
       <div id = "sectionBody">
         <?php
-          $speakersFile = file_get_contents('speakers.txt');
+          $speakersFile = file_get_contents('resources/speakers.txt');
           $speakers  = preg_split("#\n\s*\ns*\n#Uis", $speakersFile);
           foreach ($speakers as $value)
           {
@@ -43,9 +43,10 @@
             echo "
             <h1 class = 'speakerNames'>$information[0]</h1>
             <div class='speakerDiv' class='container'>
-              <img src='images/".$information[0].".png' style='float: left;' class='speakerImage'/>
+              <img src='resources/images/".$information[0].".png' style='float: left;' class='speakerImage'/>
               <p class = 'speakerDescription'>$information[1]</p>
-            </div>";
+            </div>
+            <HR class='mydividers'></HR>";
           }
         ?>
       </div>

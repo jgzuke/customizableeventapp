@@ -8,8 +8,8 @@ handlers:
   static_dir: css
 - url: /js
   static_dir: js
-- url: /images
-  static_dir: images
+- url: /resources
+  static_dir: resources
 - url: /Speakers
   script: Speakers.php
 - url: /Events

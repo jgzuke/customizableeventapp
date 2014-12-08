@@ -33,10 +33,21 @@
       </div>
     </nav>
     <div class="container" id = "mainSection"></div>
-      <h1 id = "sectionTitle">Events</h1>
       <div id = "sectionBody">
-        
-
+        <?php
+          $speakersFile = file_get_contents('resources/events.txt');
+          $speakers  = preg_split("#\n\s*\ns*\n#Uis", $speakersFile);
+          foreach ($speakers as $value)
+          {
+            $information  = preg_split("#\n\s*\n#Uis", $value);
+            echo "
+            <h1 class = 'speakerNames'>$information[0]</h1>
+            <div class='speakerDiv' class='container'>
+              <p class = 'speakerDescription'>$information[1]</p>
+            </div>
+            <HR class='mydividers'></HR>";
+          }
+        ?>
       </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
