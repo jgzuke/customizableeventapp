@@ -3,8 +3,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Event Name</title>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <link href="css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/All.css" />
+    <link type="text/css" rel="stylesheet" href="css/Directions.css" />
 </head>
 <html>
  <body>
@@ -41,7 +42,9 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/myjs.js"></script>
+    <script src="js/Bootstrap/bootstrap.All.js"></script>
+    <script src="js/Bootstrap/bootstrap.Speakers.js"></script>
+    <script src="js/All.js"></script>
+    <script src="js/Directions.js"></script>
   </body>
 </html>
