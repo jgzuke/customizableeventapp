@@ -45,8 +45,9 @@
             <div class='speakerDiv' class='container'>
               <img src='resources/images/".$information[0].".png' style='float: left;' class='speakerImage'/>
               <p class = 'speakerDescription'>$information[1]</p>
-            </div>
-            <HR class='mydividers'></HR>";
+            </div>";
+            if (!($value === end($speakers)))
+              echo "<HR class='mydividers'></HR>";
           }
         ?>
      

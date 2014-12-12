@@ -46,10 +46,27 @@
     <script src="js/Directions.js"></script>
     <script src="http://maps.googleapis.com/maps/api/js"></script>
     <script>
+        var txtFile = new XMLHttpRequest();
+        var lines;
+        var all;
+        txtFile.open("GET", "resources/directions.txt", true);
+        txtFile.onreadystatechange = function()
+        {
+          if (txtFile.readyState === 4) {  // document is ready to parse.
+            if (txtFile.status === 200) {  // file is found
+              all = txtFile.responseText;
+              lines = txtFile.responseText.split("\n");
+            }
+          }
+        }
+        txtFile.send(null);
+        var lattM = parseFloat(all);
+        var longM = -0.1200000;
         function initialize() {
-          var mapProp = {
-            center:new google.maps.LatLng(51.508742,-0.120850),
-            zoom:5,
+          var mapProp =
+          {
+            center:new google.maps.LatLng(lattM,longM),
+            zoom:14,
             mapTypeId:google.maps.MapTypeId.ROADMAP
           };
           var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);

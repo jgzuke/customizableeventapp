@@ -50,8 +50,9 @@
               <form method='get' action='resources/".preg_replace('/\s+/', '', $information[0]).".ics'>
                 <button class='btn btn-primary' style='float: right;' type='submit'>Add to Calendar</button>
               </form>
-            </div>
-            <HR class='mydividers'></HR>";
+            </div>";
+            if (!($value === end($speakers)))
+              echo "<HR class='mydividers'></HR>";
           }
         ?>
       </div>
